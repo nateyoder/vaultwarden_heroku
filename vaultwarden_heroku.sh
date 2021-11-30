@@ -33,7 +33,7 @@ function heroku_bootstrap {
 
     CREATE_APP_NAME=$1
     
-    echo "${HEROKU_APP_NAME} is the app name ${HEROKU_VERIFIED}"
+    echo "${CREATE_APP_NAME} is the app name ${HEROKU_VERIFIED}"
 
     echo "Logging into Heroku Container Registry to push the image (this will add an entry in your Docker config)"
     heroku container:login
